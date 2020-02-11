@@ -4,61 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
 
     <TextView
         android:id="@+id/TeamA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="64dp"
-        android:layout_marginEnd="120dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="132dp"
         android:inputType="number"
         android:text="@string/zeroA"
         android:textSize="150sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnA"
-        app:layout_constraintEnd_toStartOf="@+id/TeamB"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.639" />
+        app:layout_constraintEnd_toEndOf="@+id/btnA"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/TeamB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="272dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="72dp"
         android:inputType="number"
         android:text="@string/zeroB"
         android:textSize="150sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnB"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.036"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.645" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnB"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="248dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="236dp"
         android:text="@string/teama"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnB"
-        app:layout_constraintHorizontal_bias="0.164"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TeamA"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="236dp"
         android:text="@string/teamb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.633" />
+        app:layout_constraintTop_toBottomOf="@+id/TeamB"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/reset"
@@ -69,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.836" />
+        android:layout_marginTop="500dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

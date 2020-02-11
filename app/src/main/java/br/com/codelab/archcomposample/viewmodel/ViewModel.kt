@@ -1,4 +1,4 @@
-package br.com.codelab.archcomposample
+package br.com.codelab.archcomposample.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

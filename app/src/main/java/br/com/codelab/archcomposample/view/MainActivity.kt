@@ -1,9 +1,11 @@
-package br.com.codelab.archcomposample
+package br.com.codelab.archcomposample.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import br.com.codelab.archcomposample.R
+import br.com.codelab.archcomposample.viewmodel.ViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
