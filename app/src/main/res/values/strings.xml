@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ArchCompoSample</string>
+    <string name="teama">TeamA</string>
+    <string name="teamb">TeamB</string>
+    <string name="reset">reset</string>
+    <string name="zeroA">0</string>
+    <string name="zeroB">0</string>
+</resources>
