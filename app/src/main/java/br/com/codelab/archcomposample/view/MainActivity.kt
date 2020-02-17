@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     private fun clickButtonAction() {
         btnA.setOnClickListener { viewModel.updateTeamA() }
         btnB.setOnClickListener { viewModel.updateTeamB() }
+
         reset.setOnClickListener { viewModel.reset() }
     }
 
