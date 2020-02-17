@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         reset.setOnClickListener { viewModel.reset() }
     }
 
-    private fun viewModelObserver(){
+    private fun viewModelObserver() {
         viewModel.ScoreTeamA.observe(this, Observer { value ->
             TeamA.text = value.toString()
         })
